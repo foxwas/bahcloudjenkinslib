@@ -47,7 +47,7 @@ def response= input message: 'Is this build good to go?',
 	  node {
 	    stage 'Deploy'
 
-	   bat "xcopy \"C:\\Program Files\\Jenkins\\workspace\\$wsdir\\target\\SimpleGreeting*.jar\" C:\\workspace\\dev\\ /y"
+	   bat "xcopy \"C:\\Program Files\\Jenkins\\$wsdir\\target\\SimpleGreeting*.jar\" C:\\workspace\\dev\\ /y"
 	   }	
 	}	
   }
