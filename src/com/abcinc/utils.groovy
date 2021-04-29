@@ -46,7 +46,7 @@ def user_acceptance(wsdir)  {
 	if(response=="Yes") {
 	    stage 'Deploy'
 
-	   bat "xcopy \"$WORKSPACE1\\target\\SimpleGreeting*.jar\" C:\\workspace\\dev\\ /y"
+	   bat "xcopy \"$WORKSPACE\\target\\SimpleGreeting*.jar\" C:\\workspace\\dev\\ /y"
 	}	
   }
 }
