@@ -39,14 +39,14 @@ def user_acceptance(wsdir)  {
   node {
 	stage 'User Acceptance Test'
 			
-def response= input message: 'Is this build good to go?',
+              def response= input message: 'Is this build good to go?',
 		 parameters: [choice(choices: 'Yes\nNo', 
 		 description: '', name: 'Pass')]
 
 	if(response=="Yes") {
 	    stage 'Deploy'
 
-	    bat "xcopy \"$WORKSPACE\\target\\SimpleGreeting*.jar\" C:\\workspace\\dev\\ /y"
+	   bat "xcopy \"$WORKSPACE1\\target\\SimpleGreeting*.jar\" C:\\workspace\\dev\\ /y"
 	}	
   }
 }
