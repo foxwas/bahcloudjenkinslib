@@ -1,5 +1,11 @@
 package com.abcinc;
 
+pipeline {
+  agent any options { 
+    disableConcurrentBuilds() 
+  }
+}
+
 def checkout() {
    node {
 	stage 'Checkout'
