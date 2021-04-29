@@ -44,11 +44,9 @@ def response= input message: 'Is this build good to go?',
 		 description: '', name: 'Pass')]
 
 	if(response=="Yes") {
-	  //node {
 	    stage 'Deploy'
 
 	    bat "xcopy \"$WORKSPACE\\target\\SimpleGreeting*.jar\" C:\\workspace\\dev\\ /y"
-	   //}	
 	}	
   }
 }
