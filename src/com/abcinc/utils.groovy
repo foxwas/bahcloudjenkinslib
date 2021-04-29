@@ -1,11 +1,11 @@
 package com.abcinc;
 
 def configure() {
-	pipeline {
-	  agent any options { 
-		disableConcurrentBuilds() 
-	  }
-	}
+    agent any    
+
+    options {
+        disableConcurrentBuilds()
+    }
 }
 
 def checkout() {
