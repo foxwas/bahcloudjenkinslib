@@ -1,13 +1,5 @@
 package com.abcinc;
 
-def configure() {
-    agent any    
-
-    options {
-        disableConcurrentBuilds()
-    }
-}
-
 def checkout() {
    node {
 	stage 'Checkout'
