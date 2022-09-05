@@ -3,7 +3,7 @@ package com.abcinc;
 def checkout() {
    node {
 	stage 'Checkout'
-	git url: 'C:\\bahcloud\\wa2917demos\\SimpleGreeting'
+	git url: 'https://github.com/foxwas/bahcloud-simplegreeting.git'
    }
 }
 
